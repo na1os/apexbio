@@ -303,11 +303,3 @@ This project is open source. Please check the repository for the current license
 ## Support
 
 If you like ApexBio, consider giving the project a star on GitHub.
-
-Your support helps the project grow and encourages further development.
-
----
-
-<p align="center">
-  Built with modern web technologies.
-</p>
