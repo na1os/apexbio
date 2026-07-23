@@ -1,0 +1,4 @@
+# Put this file inside /uploads/.htaccess
+<FilesMatch "\.(php|phtml|php3|php4|php5|phps|cgi|pl)$">
+    Require all denied
+</FilesMatch>
