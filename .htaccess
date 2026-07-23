@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteBase /
+
+# Protect sensitive configuration & database files (Apache 2.4+)
+<FilesMatch "^\.|\.sql$|config\.php$">
+    Require all denied
+</FilesMatch>
+
+# Profile URL Rewriting (e.g., m1hai.xyz/john -> index.php?username=john)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([a-zA-Z0-9_]+)/?$ index.php?username=$1 [L,QSA]
